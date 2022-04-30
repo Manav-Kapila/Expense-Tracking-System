@@ -1,0 +1,18 @@
+html {
+    background-image: url(../img/formimg.jpg);
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden; */
+}
+
+.box {
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 50%;
+    background: #191919d1;
+    text-align: center;
+    border-radius: 50px;
+}

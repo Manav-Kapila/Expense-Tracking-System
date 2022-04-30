@@ -1,0 +1,192 @@
+body {
+    background: none;
+}
+
+div.heading {
+    font-size: 25px;
+    font-weight: 600px;
+    background-color: #f1b24a54;
+    color: #164a41;
+    text-align: center;
+    text-shadow: 1px 0px 4px #9dc88d;
+    margin-top: 1 rem;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+div.filter {
+    padding-bottom: 0.5rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 6rem;
+    text-align: center;
+    margin: 10% 5%;
+}
+
+.wrapper>div {
+    background: #7fffd459;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 35px;
+    transition: all 0.5s;
+}
+
+.wrapper>div:nth-child(odd) {
+    background: #7fffd4ad;
+}
+
+.wrapper>div:hover {
+    background: navy;
+    color: white;
+    border: 2px solid cyan;
+    transform: scale(1.15);
+    box-shadow: 1px 1px 108px cyan;
+}
+
+.adTable {
+    text-align: center;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+td {
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+input[type="text"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 30%;
+    outline: none;
+    color: white;
+    margin-bottom: 0px;
+    border-radius: 24px;
+    transition: 0.45s;
+}
+
+input[type="text"]:focus {
+    width: 40%;
+    border-color: #2ecc71;
+    background: black;
+    box-shadow: 2px 2px 6px lightgreen;
+}
+
+button.confirmDelete,
+button.confirmUpdate,
+button.search,
+input.confirmUpdate {
+    border: 0;
+    background: navy;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.45s;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input.confirmUpdate {
+    margin-top: 0px;
+}
+
+button.search {
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+button.confirmDelete:hover,
+button.confirmUpdate:hover,
+button.search:hover,
+input.confirmUpdate:hover {
+    background: #2ecc71;
+    box-shadow: 2px 2px 6px lightgreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.hidden {
+    display: none;
+    color: black;
+}
+
+div.hoverPart {
+    display: block;
+    font-size: 1.75rem;
+    transition: all 0.5s;
+}
+
+div.hoverPart:hover+div.hidden {
+    display: block;
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        margin: 15% 10% 10% 15%;
+    }
+    .wrapper>div {
+        padding: 1em;
+        margin: auto;
+        border: 2px solid black;
+    }
+    div.heading {
+        font-size: 15px;
+        font-weight: 400px;
+        line-height: normal;
+        text-shadow: none;
+    }
+    div.filter {
+        transition: all 0.5s;
+    }
+    input[type="text"] {
+        padding: 7px 5px;
+    }
+    div.hoverPart {
+        font-size: 1rem;
+    }
+    button.search {
+        padding: 5px 10px;
+        border-radius: 100%;
+    }
+    .wrapper>div:hover {
+        background: #7fffd459;
+        ;
+        color: black;
+        border: 2px solid black;
+        transform: none;
+        box-shadow: none;
+    }
+    .wrapper>div:nth-child(odd):hover {
+        background: #7fffd4ad;
+    }
+    button.confirmDelete,
+    button.confirmUpdate,
+    button.search,
+    input.confirmUpdate {
+        font-size: 14px;
+    }
+    input[type="text"] {
+        background: none;
+        width: 60%;
+    }
+    input[type="text"]:focus {
+        width: 80%;
+    }
+}

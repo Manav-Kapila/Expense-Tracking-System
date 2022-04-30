@@ -1,0 +1,14 @@
+Dark green
+#164A41
+
+Medium green
+#4D774E
+
+Light green
+#9DC88D
+
+Mustard
+#F1B24A
+
+White 
+#fff

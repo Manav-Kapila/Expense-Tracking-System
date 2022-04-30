@@ -1,0 +1,12 @@
+List of done things
+-- register/sign in
+-- deposit amount
+-- withdraw amount
+-- view txn
+
+
+List of pending things
+-- delete txn
+
+List of dropped things
+-- update txn => delete and create new txn instead of updating an existing transaction
